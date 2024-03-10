@@ -35,9 +35,7 @@ class Router
     '/file/share/delete/{id}/{user_id}' => ['DELETE', [FileController::class, 'removeShareUserId']]
     ];
 
-    /**
-     * @return array|null
-     */
+
     public function getRoute(): ?array
     {
         $path = $_SERVER['REQUEST_URI'] ?? '';
